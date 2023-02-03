@@ -1,4 +1,4 @@
-module data_flow (s, c, a, b);
+module half_adder (s, c, a, b);
 
 input a,b;
 output wire s,c;
