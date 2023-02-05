@@ -24,7 +24,7 @@ module fifo #(parameter WIDTH = 8, DEPTH = 8) (
     end
   end
 
-  assign full = (wr_ptr == rd_ptr) & (wr_en == 1);
-  assign empty = (wr_ptr == rd_ptr) & (rd_en == 1);
+  assign full = (wr_ptr == rd_ptr) & (wr_en == 0);
+  assign empty = (wr_ptr == rd_ptr) & (rd_en == 0);
 
 endmodule
