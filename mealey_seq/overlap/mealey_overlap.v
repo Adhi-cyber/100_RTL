@@ -41,3 +41,4 @@ reg [1:0] PS,NS ;
 
             endcase
         end
+  endmodule
